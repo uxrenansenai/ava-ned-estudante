@@ -1,0 +1,33 @@
+# Dependencies and build output
+node_modules/
+dist/
+build/
+.next/
+.nuxt/
+.vite/
+
+# Vercel local metadata
+.vercel/
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+
+# Logs and reports
+*.log
+coverage/
+.nyc_output/
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor and temporary files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+__*-smoke.html
