@@ -59,4 +59,10 @@ Como o Root Directory aponta para `estudante`, o `index.html` será a página in
 
 ## Observação sobre imagens
 
-Os cursos usam assets disponibilizados pelo arquivo Figma durante a implementação. Para uma publicação de longa duração ou sem dependência externa, copie esses assets para `estudante/assets/` e atualize as referências em `script.js` antes do compartilhamento definitivo.
+Todas as imagens são servidas localmente a partir de `estudante/assets/` (sem dependência de URLs temporárias do Figma):
+
+- `assets/logo-ned.png` — logo oficial da Nossa Escola Digital (sidebar, login e cabeçalho das aulas).
+- `assets/courses/` e `assets/trails/` — capas exportadas do Figma, otimizadas em JPEG (máx. 800px).
+- `assets/ui/` — decoração do banner da página inicial e marca d'água da sidebar, exportadas do Figma.
+
+O mapeamento capa ↔ curso fica em `COURSE_IMAGES` e `TRAIL_IMAGES`, no início de `script.js`. Cursos sem capa correspondente no Figma (`null` no mapa) exibem um placeholder com o gradiente da marca.
